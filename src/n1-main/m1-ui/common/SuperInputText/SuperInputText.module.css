@@ -1,0 +1,21 @@
+.superInput {
+    border: none;
+    background-color: #fafafa;
+    height: 25px;
+    width: 250px;
+    border-bottom: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+.superInput:focus-visible{
+    outline: none;
+}
+
+.errorInput {
+    border-bottom: 1px solid red;
+}
+
+.error {
+    color: red;
+}
+
