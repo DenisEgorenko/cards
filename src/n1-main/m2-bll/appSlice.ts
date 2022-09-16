@@ -9,7 +9,9 @@ const initialState: CounterState = {
     value: 0
 }
 
-const appSlice = createSlice({
+export type appActionType = ReturnType<typeof testAction>
+
+const slice = createSlice({
     name: 'app',
     initialState,
     reducers: {
@@ -19,5 +21,5 @@ const appSlice = createSlice({
     },
 })
 
-export const {testAction} = appSlice.actions
-export default appSlice.reducer
+export const {testAction} = slice.actions
+export default slice.reducer
